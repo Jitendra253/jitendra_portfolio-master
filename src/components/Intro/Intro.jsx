@@ -3,8 +3,6 @@ import "./Intro.css";
 import Insta from "@iconscout/react-unicons/icons/uil-instagram";
 import Github from "@iconscout/react-unicons/icons/uil-github";
 import LinkedIn from "@iconscout/react-unicons/icons/uil-linkedin";
-import Vector1 from "../../img/Vector1.png";
-import Vector2 from "../../img/Vector2.png";
 import profileImage from "../../img/profileImage.png";
 import react from "../../img/react.png";
 import thumbup from "../../img/thumbup.png";
@@ -67,9 +65,38 @@ const Intro = () => {
       </div>
       {/* right image side */}
       <div className="i-right">
-        <img src={Vector1} alt="" />
-        <img src={Vector2} alt="" />
-        <img src={profileImage} alt="" />
+        <svg id="sw-js-blob-svg" viewBox="8 8 70 70" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+              <stop id="stop1" stop-color="rgba(248, 117, 55, 1)" offset="0%"></stop>
+              <stop id="stop2" stop-color="rgba(251, 168, 31, 1)" offset="100%"></stop>
+            </linearGradient>
+          </defs>
+          <mask id="mask1" mask-type="alpha">
+            <path
+              fill="url(#sw-gradient)"
+              d="M23.6,-27.7C28.9,-23.7,30.4,-14.6,30.1,-6.8C29.7,1.1,27.6,7.9,24.1,13.9C20.7,20,15.9,25.3,9.9,27.5C4,29.8,-3.2,29.1,-9,26.3C-14.8,23.5,-19.2,18.6,-25.3,12.4C-31.5,6.3,-39.3,-1,-39,-7.5C-38.6,-14,-29.9,-19.7,-22.1,-23.3C-14.2,-26.8,-7.1,-28.3,1,-29.5C9.1,-30.7,18.3,-31.7,23.6,-27.7Z"
+              width="100%"
+              height="100%"
+              transform="translate(50 50)"
+              stroke-width="0"
+              style={{ transition: "all 0.3s ease 0s" }}
+            ></path>
+          </mask>
+          <g mask="url(#mask1)">
+            <path
+              fill="url(#sw-gradient)"
+              d="M23.6,-27.7C28.9,-23.7,30.4,-14.6,30.1,-6.8C29.7,1.1,27.6,7.9,24.1,13.9C20.7,20,15.9,25.3,9.9,27.5C4,29.8,-3.2,29.1,-9,26.3C-14.8,23.5,-19.2,18.6,-25.3,12.4C-31.5,6.3,-39.3,-1,-39,-7.5C-38.6,-14,-29.9,-19.7,-22.1,-23.3C-14.2,-26.8,-7.1,-28.3,1,-29.5C9.1,-30.7,18.3,-31.7,23.6,-27.7Z"
+              width="100%"
+              height="100%"
+              transform="translate(50 50)"
+              stroke-width="0"
+              style={{ transition: "all 0.3s ease 0s" }}
+            ></path>
+            <image href={profileImage} x="12" y="15" width="70" height="70" alt="" />
+          </g>
+        </svg>
+
         {/* animation */}
         <motion.img
           initial={{ left: "-36%" }}
@@ -90,7 +117,7 @@ const Intro = () => {
 
         {/* animation */}
         <motion.div
-          initial={{ left: "9rem", top: "18rem" }}
+          initial={{ left: "9rem", top: "12rem" }}
           whileInView={{ left: "0rem" }}
           transition={transition}
           className="floating-div"

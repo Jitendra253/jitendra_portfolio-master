@@ -69,27 +69,16 @@
   z-index: 1;
 }
 
+
+
 .i-right> :nth-child(1) {
-  transform: scale(0.69);
-  left: -15%;
-  top: -9%;
+  /* transform: scale(0.6); */
+  top: -25%;
+  width: 25rem;
+  height: 22rem;
 }
 
 .i-right> :nth-child(2) {
-  top: -4.6rem;
-  transform: scale(0.67);
-  left: -3rem;
-}
-
-.i-right> :nth-child(3) {
-  /* transform: scale(0.6); */
-  left: 10%;
-  width: 20rem;
-  height: 22rem;
-  border-bottom-left-radius: 50%;
-}
-
-.i-right> :nth-child(4) {
   transform: scale(0.8);
   top: -19%;
   left: -24%;
