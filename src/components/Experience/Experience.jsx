@@ -19,7 +19,7 @@ const Experience = () => {
         <span>Projects</span>
       </div>
       <div className="achievement">
-        <div className="circle" style={{ color: darkMode ? 'var(--orange)' : '' }}>1+</div>
+        <div className="circle" style={{ color: darkMode ? 'var(--orange)' : '' }}>2+</div>
         <span style={{ color: darkMode ? 'white' : '' }}>companies </span>
         <span>Work</span>
       </div>
